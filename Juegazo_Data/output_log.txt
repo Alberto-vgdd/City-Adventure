@@ -1,0 +1,76 @@
+Initialize engine version: 5.5.1f1 (88d00a7498cd)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 950M (ID=0x139a)
+    Vendor:   NVIDIA
+    VRAM:     2017 MB
+    Driver:   21.20.16.4534
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Jonatan\Desktop\GameJam 10-02-2017\City-Adventure\Juegazo_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Jonatan\Desktop\GameJam 10-02-2017\City-Adventure\Juegazo_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Jonatan\Desktop\GameJam 10-02-2017\City-Adventure\Juegazo_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Jonatan\Desktop\GameJam 10-02-2017\City-Adventure\Juegazo_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Jonatan\Desktop\GameJam 10-02-2017\City-Adventure\Juegazo_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Jonatan\Desktop\GameJam 10-02-2017\City-Adventure\Juegazo_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Jonatan\Desktop\GameJam 10-02-2017\City-Adventure\Juegazo_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Jonatan\Desktop\GameJam 10-02-2017\City-Adventure\Juegazo_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Jonatan\Desktop\GameJam 10-02-2017\City-Adventure\Juegazo_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\Jonatan\Desktop\GameJam 10-02-2017\City-Adventure\Juegazo_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.138 seconds
+Platform assembly: C:\Users\Jonatan\Desktop\GameJam 10-02-2017\City-Adventure\Juegazo_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Jonatan\Desktop\GameJam 10-02-2017\City-Adventure\Juegazo_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.153184 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 2018 -> priority: 1 
+  Thread -> id: 1094 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.870912 ms
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 657.
+Total: 0.262715 ms (FindLiveObjects: 0.073876 ms CreateObjectMapping: 0.014222 ms MarkObjects: 0.130370 ms  DeleteObjects: 0.043061 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.682567 ms
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 403)
+
+
+Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 620.
+Total: 0.750616 ms (FindLiveObjects: 0.030419 ms CreateObjectMapping: 0.019753 ms MarkObjects: 0.150518 ms  DeleteObjects: 0.549925 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.713086 ms
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 780.
+Total: 1.703110 ms (FindLiveObjects: 0.070320 ms CreateObjectMapping: 0.021333 ms MarkObjects: 0.167111 ms  DeleteObjects: 1.443950 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.449185 ms
+
+Unloading 58 unused Assets to reduce memory usage. Loaded Objects now: 826.
+Total: 1.180443 ms (FindLiveObjects: 0.037135 ms CreateObjectMapping: 0.021333 ms MarkObjects: 0.155654 ms  DeleteObjects: 0.965530 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.756937 ms
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 1725.
+Total: 1.490567 ms (FindLiveObjects: 0.109432 ms CreateObjectMapping: 0.048197 ms MarkObjects: 0.195555 ms  DeleteObjects: 1.136592 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.037431 ms
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 413.
+Total: 3.809578 ms (FindLiveObjects: 0.062419 ms CreateObjectMapping: 0.014222 ms MarkObjects: 0.227160 ms  DeleteObjects: 3.504986 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.731060 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 414.
+Total: 0.250864 ms (FindLiveObjects: 0.046617 ms CreateObjectMapping: 0.030419 ms MarkObjects: 0.165135 ms  DeleteObjects: 0.007901 ms)
+
