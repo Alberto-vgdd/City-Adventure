@@ -13,6 +13,7 @@ public class PlayerMovementLaberinto : MonoBehaviour
     private float m_HorizontalInput;
     private float m_VerticalInput;
     private bool m_JumpInput;
+	private bool m_Quit;
 
     private bool m_IsJumping;
     public bool m_IsOnFloor;
@@ -28,6 +29,8 @@ public class PlayerMovementLaberinto : MonoBehaviour
 	void Update ()
     {
         ReadInputs();
+		checkQuit ();
+
     }
 
 
@@ -39,9 +42,16 @@ public class PlayerMovementLaberinto : MonoBehaviour
         
     }
 
+	void checkQuit(){
+		if (m_Quit) {
+			Application.Quit ();
+		}
+	}
+
 
     void ReadInputs()
     {
+		m_Quit = Input.GetButtonDown ("Back");
         m_HorizontalInput = Input.GetAxis("Horizontal");
         m_VerticalInput = Input.GetAxis("Vertical");
         m_JumpInput = Input.GetButton("Jump");
