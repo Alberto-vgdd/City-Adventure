@@ -37,7 +37,7 @@ public class CameraAnimation : MonoBehaviour {
     public void enable2()
     {
         m_IsActivated2 = true;
-        Invoke("exitGame", 1.2f);
+        Invoke("exitGame", 1f);
 
     }
 

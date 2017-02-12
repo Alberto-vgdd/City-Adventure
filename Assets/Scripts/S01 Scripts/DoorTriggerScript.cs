@@ -29,8 +29,8 @@ public class DoorTriggerScript : MonoBehaviour
         if (otherObject.collider.tag.Equals( "Player") && !m_AlreadyActived)
         {
             m_AlreadyActived = true;
-            Invoke("LaunchHUDError", 5f);
-            Invoke("ShowSecretPath", 6.5f);
+            Invoke("LaunchHUDError", 2f);
+            Invoke("ShowSecretPath", 3.5f);
         }
     }
 

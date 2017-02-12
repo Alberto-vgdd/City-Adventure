@@ -27,12 +27,13 @@ public class AgroEnemyDisabler : MonoBehaviour
     {
         if (otherObject.CompareTag("Player") && !m_IsUsed)
         {
+            
             m_IsUsed = true;
             m_EnemyGameObject.GetComponent<DiamondScript>().enabled = false;
             m_EnemyGameObject.GetComponent<NavMeshAgent>().enabled = false;
             m_EnemyGameObject.GetComponent<ParticleSystem>().Stop();
             GetComponent<AudioSource>().Play();
-           m_Player.GetComponent<PlayerMovement>().enabled = false;
+            m_Player.GetComponent<Animator>().Play("PlayerDeath");
 
             m_Camera.GetComponent<CameraAnimation>().enable();
 

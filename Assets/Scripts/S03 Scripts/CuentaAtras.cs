@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 	
 public class CuentaAtras : MonoBehaviour
 {
-	public Camera camara;
+	public AudioSource camara;
     public float tiempoTotal;
     private float aux;
     public Text texto;
@@ -28,8 +28,8 @@ public class CuentaAtras : MonoBehaviour
         
         if (tiempoTotal <= 0)
         {
-			camara.GetComponent<AudioSource> ().clip = ErrorSound;
-			camara.GetComponent<AudioSource> ().Play ();
+			camara.clip = ErrorSound;
+			camara.Play ();
 			ErrorImage.GetComponent<Image>().enabled = true;
 			Invoke ("Restart", 3f);
 

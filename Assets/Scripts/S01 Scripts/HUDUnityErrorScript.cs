@@ -9,16 +9,16 @@ public class HUDUnityErrorScript : MonoBehaviour
     private Animator m_Animator;
     private bool m_IsActivated;
     private Image m_ErrorImage;
+    private bool m_MoveError;
 
-   
-	
-	void Awake ()
+
+    void Awake ()
     {
         m_Animator = GetComponent<Animator>();
         m_AudioSource = GetComponent<AudioSource>();
         m_ErrorImage = transform.Find("UnityErrorImage"). GetComponent<Image>();
         m_IsActivated = false;
-
+        m_MoveError = false;
     }
 	
 	// Update is called once per frame
@@ -31,7 +31,11 @@ public class HUDUnityErrorScript : MonoBehaviour
                 PlayErrorSound();
             }
 
-            m_ErrorImage.rectTransform.anchoredPosition = new Vector2(Input.GetAxis("Horizontal") * 200f, Input.GetAxis("Vertical") * 200f);
+            if (m_MoveError)
+            {
+                m_ErrorImage.rectTransform.anchoredPosition = new Vector2(Input.GetAxis("Horizontal") * 150f, Input.GetAxis("Vertical") * 150f);
+            }
+           
         }
 	
     }
@@ -42,11 +46,18 @@ public class HUDUnityErrorScript : MonoBehaviour
         m_IsActivated = true;
         m_Animator.SetTrigger("UnityError");
         Invoke("PlayErrorSound",1.5f);
+        Invoke("MoveError", 3.5f);
+        
     }
 
 
    void PlayErrorSound()
     {
         m_AudioSource.Play();
+    }
+
+    void MoveError()
+    {
+        m_MoveError = true; 
     }
 }
