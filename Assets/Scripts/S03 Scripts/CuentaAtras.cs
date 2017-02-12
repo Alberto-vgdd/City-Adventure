@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+	
 public class CuentaAtras : MonoBehaviour
 {
-
+	public Camera camara;
     public float tiempoTotal;
     private float aux;
     public Text texto;
     private float porcentaje;
+	public GameObject ErrorImage;
+	public AudioClip ErrorSound;
 
     // Use this for initialization
     void Start()
@@ -25,10 +28,18 @@ public class CuentaAtras : MonoBehaviour
         
         if (tiempoTotal <= 0)
         {
-            SceneManager.LoadScene("S03");
+			camara.GetComponent<AudioSource> ().clip = ErrorSound;
+			camara.GetComponent<AudioSource> ().Play ();
+			ErrorImage.GetComponent<Image>().enabled = true;
+			Invoke ("Restart", 3f);
+
         }
         porcentaje = 100 - (tiempoTotal * 100 / aux);
         texto.text = "DISC DEFRAG: " + porcentaje.ToString("F2") + "%";
 
     }
+
+	void Restart(){
+		SceneManager.LoadScene ("S03");
+	}
 }
