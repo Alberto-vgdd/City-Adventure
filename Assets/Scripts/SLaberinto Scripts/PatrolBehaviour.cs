@@ -18,15 +18,16 @@ public class PatrolBehaviour : MonoBehaviour {
 
 	}
 
-	void OnTriggerExit()
+	void OnTriggerExit(Collider other)
 	{
-		persiguiendo = false;
-	}
+        if (other.tag == "Player")
+        {
+            persiguiendo = false;
+        }
+    }
 
 	void SearchAndDestroy()
 	{
-		target = GameObject.FindGameObjectWithTag("Player").transform;
-
 		if (persiguiendo) 
 		{
 			this.transform.position = Vector3.MoveTowards (this.transform.position, target.position, speedyBoy*Time.deltaTime);	
@@ -34,11 +35,10 @@ public class PatrolBehaviour : MonoBehaviour {
 
 	}
 
-//	// Use this for initialization
-//	void Start () 
-//	{
-//		
-//	}
+    void Awake()
+    {
+        target = GameObject.FindGameObjectWithTag("Player").transform;
+    }
 	
 	// Update is called once per frame
 	void Update () {
