@@ -16,7 +16,7 @@ public class HUDUnityErrorScript : MonoBehaviour
     {
         m_Animator = GetComponent<Animator>();
         m_AudioSource = GetComponent<AudioSource>();
-        m_ErrorImage = GetComponent<Image>();
+        m_ErrorImage = transform.Find("UnityErrorImage"). GetComponent<Image>();
         m_IsActivated = false;
 
     }
@@ -24,11 +24,17 @@ public class HUDUnityErrorScript : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-		if (Input.GetMouseButtonDown(0) && m_IsActivated)
+        if (m_IsActivated)
         {
-            PlayErrorSound();
+            if (Input.GetButtonDown("Jump"))
+            {
+                PlayErrorSound();
+            }
+
+            m_ErrorImage.rectTransform.anchoredPosition = new Vector2(Input.GetAxis("Horizontal") * 200f, Input.GetAxis("Vertical") * 200f);
         }
-	}
+	
+    }
 
 
     public void LaunchError()

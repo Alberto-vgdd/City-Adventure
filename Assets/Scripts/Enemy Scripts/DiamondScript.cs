@@ -43,9 +43,7 @@ public class DiamondScript : MonoBehaviour
             m_Target.Find("Main Camera") .parent= null;
         
             m_Target.GetComponent<Animator>().Play("PlayerDeath");
-            m_Target.GetComponent<PlayerMovement>().enabled = false;
-   
-            m_HUD.Play("New Animation2");
+            m_HUD.Play("Avast Animation 2");
             Invoke("ResetLevel", 4.5f);
         }
     }
